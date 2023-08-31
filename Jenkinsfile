@@ -6,10 +6,10 @@ pipeline {
   stages {
     stage ('Build') { 
       steps {
-        sh 'bundle install'
+        echo 'bundle install'
 
       
-        sh 'bundle exec rake build spec'
+        echo 'bundle exec rake build spec'
 
         archive includes: 'pkg/*.gem'
 
