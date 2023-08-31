@@ -14,7 +14,7 @@ pipeline {
         archive includes: 'pkg/*.gem'
 
     
-     publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'tarket', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
+     publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, includes: '**/*.png', keepAll: false, reportDir: 'tarket', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
       }
     }
   }
